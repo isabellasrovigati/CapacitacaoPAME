@@ -3,10 +3,24 @@ import './styles.css';
 import Numbers from '../Other/index';
 import {Buttons, Button} from './styles.js'
 
-function Main() {
+export default class Main extends React.Component {
+
+    render(){
+
+        const hello = {
+            color:"beige", 
+            fontSize:"50px",
+            padding:"20px",
+            margin:"0",
+            textAlign: "center",
+            fontFamily: "Arial",
+            backgroundColor: "rgb(50,100,150)"
+        }; 
+
   return (
+
       <>
-        <h1 style={{color:"beige", fontSize:"50px", padding:"20px", margin:"0", textAlign: "center", fontFamily: "Arial", backgroundColor: "rgb(50,100,150)"}}> 
+        <h1 style={hello}> 
           Hello, Fluxo!
         </h1>
     <div style={{backgroundColor: "burlywood", marginTop: "20px", color:"white", display: "flex", flexDirection: "row", padding:"10px", letterSpacing: "10px"}}>
@@ -29,9 +43,9 @@ function Main() {
             Press
         </button>
         </Buttons>
-       
     </>
+    
   );
 }
+}
 
-export default Main;

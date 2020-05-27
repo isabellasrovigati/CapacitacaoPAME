@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import Main from './pages/Main/index';
+import Main from './pages/Main/index';
 import Counter from './pages/Contador/index.js';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Counter />
+    <Main />
   </React.StrictMode>,
   document.getElementById('root')
 );
