@@ -1,6 +1,7 @@
 body {
-    margin: 0;
     background-color: bisque;
+    margin: 0;
+    
 }
 
  h3:last-child{
@@ -12,10 +13,8 @@ h3:first-child{
     background-color: lightslategrey;
 }
 
-.botao{
+.botao2{
     cursor: pointer;
-    background: linear-gradient(to bottom,  rgb(27, 73, 136), rgb(20, 94, 121),rgb(16, 119, 112));
-    border: none;
     width: 300px;
     color:white;
     padding:15px;
@@ -23,23 +22,26 @@ h3:first-child{
     font-weight: bold;
     border-radius: 25px;
     margin: 20px auto;
+    color: teal;
+    border-radius: 10px;
+    border:3px solid rgb(16, 119, 112);
+    background: transparent;
     transition-duration: 0.2s;
     display: block;
     outline: none;
 }
 
-#botaozinho:hover {
+#botaozinho2:hover {
     color: teal;
     border-radius: 10px;
-    font-style: italic;
     border:3px solid rgb(16, 119, 112);
     background: transparent;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-#botaozinho:active {
-    background-color: rgb(160, 207, 205);
-    transform: translateY(4px);
-  
+#botaozinho2:active {
+    background-color:teal;
+    color: white;
+    transform: translateY(2px);
 }
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles.css';
 import Numbers from '../Other/index';
+import {Buttons, Button} from './styles.js'
 
 function Main() {
   return (
@@ -20,9 +21,15 @@ function Main() {
             <h3>3</h3>
             </div>
         </div>
-        <button className="botao" id="botaozinho">
+        <Buttons>
+             <Button >
+            Press
+        </Button>
+        <button className="botao2" id="botaozinho2">
             Press
         </button>
+        </Buttons>
+       
     </>
   );
 }
