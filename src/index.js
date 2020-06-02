@@ -5,10 +5,7 @@ import Counter from './pages/Contador/index.js';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Main />
+    <Counter />
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-
-

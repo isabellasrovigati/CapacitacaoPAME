@@ -1,47 +1,43 @@
 body {
-    background-color: bisque;
-    margin: 0;
-    
+  background-color: bisque;
+  margin: 0;
 }
 
- h3:last-child{
-    background-color:lightseagreen;
-    width:50%;
+h3:last-child {
+  background-color: lightseagreen;
+  width: 50%;
 }
 
-h3:first-child{
-    background-color: lightslategrey;
+h3:first-child {
+  background-color: lightslategrey;
 }
 
-.botao2{
-    cursor: pointer;
-    width: 300px;
-    color:white;
-    padding:15px;
-    font-size: 30px;
-    font-weight: bold;
-    border-radius: 25px;
-    margin: 20px auto;
-    color: teal;
-    border-radius: 10px;
-    border:3px solid rgb(16, 119, 112);
-    background: transparent;
-    transition-duration: 0.2s;
-    display: block;
-    outline: none;
+.botao2 {
+  cursor: pointer;
+  width: 300px;
+  color: white;
+  padding: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px auto;
+  color: teal;
+  border-radius: 10px;
+  border: 3px solid rgb(16, 119, 112);
+  background: transparent;
+  transition-duration: 0.2s;
+  display: block;
+  outline: none;
 }
 
 #botaozinho2:hover {
-    color: teal;
-    border-radius: 10px;
-    border:3px solid rgb(16, 119, 112);
-    background: transparent;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  color: teal;
+  background-color: azure;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 #botaozinho2:active {
-    background-color:teal;
-    color: white;
-    transform: translateY(2px);
+  background-color: teal;
+  color: white;
+  transform: translateY(2px);
 }
-
