@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css';
-import Numbers from '../Other/index';
+import Numbers from '../../components/Numbers/index';
 import { Buttons, Button } from './styles.js';
 
 export default class Main extends React.Component {
