@@ -2,8 +2,8 @@ import React from 'react';
 import './index.css';
 
 export default class Counter extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       step: 1,
       count: 0,

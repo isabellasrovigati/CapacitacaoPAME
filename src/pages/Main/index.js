@@ -54,10 +54,7 @@ export default class Main extends React.Component {
               padding: '10px',
             }}
           >
-            <h3>0</h3>
-            <h3>1</h3>
-            <h3>2</h3>
-            <h3>3</h3>
+           <Numbers/>
           </div>
         </div>
         <Buttons>
