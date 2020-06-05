@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Buttons = styled.div`
   display: flex;
@@ -24,7 +24,7 @@ export const Button = styled.button`
   display: block;
   outline: none;
   &:hover {
-    background-color: rgb(16, 119, 112);
+    background: rgb(16, 119, 112);
     font-style: italic;
   }
 `;
