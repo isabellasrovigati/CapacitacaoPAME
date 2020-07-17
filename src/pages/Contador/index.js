@@ -11,63 +11,55 @@ export default class Counter extends React.Component {
     };
   }
 
-  up() {
+  up = () => {
     this.setState({ count: this.state.count + this.state.step });
-  }
+  };
 
-  down() {
+  down = () => {
     this.setState({ count: this.state.count - this.state.step });
-  }
+  };
 
-  updateSteps(e) {
-    this.setState({ step: parseInt(e.target.value, 10) || 0 });
-  }
+  updateSteps = (e) => {
+    this.setState({ step: parseInt(e.target.value) || 0 });
+  };
 
-  reset() {
+  reset = () => {
     this.setState({ count: 0 });
-  }
+  };
 
-  changeBackground() {
-    console.log(this.state.background);
+  changeBackground = () => {
     if (this.state.background === true) {
       this.setState({ background: false });
-      console.log(this.state.background);
-    }
-    if (this.state.background === false) {
+    } else {
       this.setState({ background: true });
     }
-  }
+  };
 
   render() {
     const { count, step, background } = this.state;
     return (
-      <body className="body">
-        <div
-          className="counter"
-          style={{
-            marginTop: '100px',
-            backgroundColor: background
-              ? 'rgb(104, 176, 207)'
-              : 'rgb(62,145,181)',
-          }}
-        >
-          <div className="result">{count}</div>
-          <div className="reset" onClick={() => this.reset()}>
-            resetar
-          </div>
-          <button onClick={() => this.down()}>-{step}</button>
-          <button onClick={() => this.up()}>+{step}</button>
-          <div>
-            <input
-              type="number"
-              min="0"
-              value={step}
-              onChange={(e) => this.updateSteps(e)}
-            />
-          </div>
-          <button onClick={() => this.changeBackground()}> Mudar Fundo</button>
+      <div
+        className="counter"
+        style={{
+          backgroundColor: background
+            ? 'rgb(104, 176, 207)'
+            : 'rgb(62,145,181)',
+        }}
+      >
+        <div className="result">{count}</div>
+        
+        <div className="reset" onClick={this.reset}>
+          resetar
         </div>
-      </body>
+
+        <button onClick={this.down}>-{step}</button>
+
+        <button onClick={this.up}>+{step}</button>
+
+        <input type="number" min="0" value={step} onChange={this.updateSteps} />
+
+        <button onClick={this.changeBackground}> Mudar Fundo</button>
+      </div>
     );
   }
 }
